@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanrong Zhu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 60%;
+            max-width: 1200px; /* Set a max-width */
+            margin: auto;
+            margin-top: 50px;
+            overflow: hidden;
+        }
+        header {
+            background: #dfe1e1;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #6c6a6a 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            margin: 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #8e2f15;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .research-section {
+            text-align: left; /* Align text to the left */
+            margin: 40px 0;
+            padding-top: 20px; /* Space above the education section */
+            border-top: 1px solid #ccc; /* Line between sections */
+          
+        }
+
+        .paper-list {
+            list-style-type: none; /* Removes the default bullet points */
+            padding-left: 0; /* Removes the default padding */
+            margin-top: 20px;
+        }
+
+        .paper-list li {
+            margin-bottom: 10px; /* Adds some space between the papers */
+        }
+
+        .paper-list a {
+            text-decoration: none; /* Optional: removes the underline from links */
+            color: #8e2f15; /* Makes the link color consistent with your header color */
+        }
+
+        .paper-list a:hover {
+            text-decoration: underline; /* Re-adds underline on hover for clarity */
+        }
+
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            .bio-section {
+                flex-direction: column;
+                align-items: center;
+            }
+            .bio-section img {
+                margin-right: 0;
+                margin-bottom: 20px; /* Add some space below the image on small screens */
+            }
+            header nav, header nav ul {
+                float: none;
+                text-align: center;
+            }
+            header nav li {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+        .paper-note {
+        font-size: 0.8em; /* Make the font size smaller than the main text */
+        color: #666; /* A lighter shade of text color, typically used for notes */
+        margin-top: 10px; /* Add space above the note */
+    }
+
+
+
+    </style>
+
+ 
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="zhuwr.html">Home</a></li>
+                    <li class="current"><a href="research.html">Research</a></li>
+                    <li><a href="teaching.html">Teaching</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header> 
+
+
+    <div class="container">
+         
+            <h2>Research Interest</h2> 
+        <ul>
+            <li>Statistical learning and inference</li>
+            <li>Stochastic optimization</li>
+            <li>Goodness-of-fit testing</li>
+            <li>Conformal inference</li> 
+            <li>Covariance matrix estimation</li> 
+            
+        </ul>
+      
+    </div>
+    
+    <div class="container">
+        <section class="research-section">
+            <h2>Publication and Preprints</h2>
+            <ul class="paper-list">
+                <li>
+                    <a href="https://arxiv.org/pdf/2309.08063.pdf" target="_blank">Approximate co-sufficient sampling with regularization</a>
+                    <br>
+                    <span class="authors"><strong>Wanrong Zhu</strong> and Rina Foygel Barber, 2023.</span>
+                </li>
+                <li>
+                    <a href="https://arxiv.org/pdf/2307.06915.pdf" target="_blank">Weighted Averaged Stochastic Gradient Descent: Asymptotic Normality and Optimality</a>
+                    <br>
+                    <span class="authors">Ziyang Wei, <strong>Wanrong Zhu</strong>, and Wei Biao Wu, 2023.</span>
+                </li>
+                <li>
+                    <a href="https://arxiv.org/abs/2002.03979" target="_blank">Online Covariance Matrix Estimation in Stochastic Gradient Descent</a>
+                    <br>
+                    <span class="authors"><strong>Wanrong Zhu</strong>, Xi Chen and Wei Biao Wu.</span>
+                    <br>
+                    <em> Journal of the American Statistical Association, 2023.</em>
+                </li>
+                <li>
+                    <a href="https://jmlr.csail.mit.edu/papers/v23/21-0560.html" target="_blank">Beyond Sub-Gaussian Noises: Sharp Concentration Analysis for SGD</a>
+                    <br>
+                    <span class="authors">Zhipeng Lou*, <strong>Wanrong Zhu*</strong>, and Wei Biao Wu.</span>
+                    <br>
+                    <em>Journal of Machine Learning Research, 2022. </em>
+                </li>
+            </ul>
+            <p class="paper-note">* = alphabetical ordering or equal contribution</p>
+
+        </section>
+    </div>
+
+<!--
+    <div class="container">
+        <section class="research-section">
+            <h2>Working paper</h2>
+            <ul class="paper-list">
+                <li>
+                    Refining Covariance Matrix Estimation in Stochastic Gradient Descent through Bias Reduction </a>
+                    <br>
+                    <span class="authors"><strong>Wanrong Zhu</strong>, Jingyang Lv, Ziyang Wei, and Wei Biao Wu.</span>
+                </li>
+                <li>
+                    Online Statistical Inference with High Level Confidence using
+Stochastic Optimization
+                    <br>
+                    <span class="authors"><strong>Wanrong Zhu</strong>, Zhipeng Lou, Ziyang Wei, and Wei Biao Wu.</span>
+                </li>
+                <li>
+                    Improve predictive inference through selection and ensemble.
+                    <br>
+                    <span class="authors">Ruiting Liang, <strong>Wanrong Zhu</strong>, and Rina Foygel Barber.</span>
+                </li>
+
+        </section>
+    </div>
+    -->
+    
+    <!-- ... rest of the body content ... -->
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanrong Zhu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 60%;
+            max-width: 1200px; /* Set a max-width */
+            margin: auto;
+            margin-top: 50px;
+            overflow: hidden;
+        }
+        header {
+            background: #dfe1e1;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #6c6a6a 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            margin: 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #8e2f15;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .bio-section {
+            display: flex;
+            margin-top: 20px;
+        }
+        .bio-section img {
+            max-width: 350px; /* Adjust the size for all screens */
+            height: auto; /* Maintain aspect ratio */
+             
+            margin-right: 50px;
+            object-fit: cover;
+        }
+        .bio-section .bio {
+            flex: 2;
+            max-width: 600px; /* Prevent the bio text from becoming too wide */
+        }
+
+        .bio-section a {
+        color: #8e2f15; /* This is a blue color, you can use any hex color you like */
+        text-decoration: none; /* Optional: removes the underline from links */
+    }
+
+    .bio-section a:hover {
+        color: #8e2f15; /* Color when the mouse hovers over the link */
+        text-decoration: underline; /* Optional: adds underline on hover */
+    }
+
+        .education-section {
+            text-align: left; /* Align text to the left */
+            margin: 40px 0;
+            padding-top: 20px; /* Space above the education section */
+            border-top: 1px solid #ccc; /* Line between sections */
+          
+        }
+        .contact-section {
+            text-align: left; /* Align text to the left */
+            margin: 40px 0;
+            padding-top: 20px; /* Space above the education section */
+            border-top: 1px solid #ccc; /* Line between sections */
+          
+        }
+
+        .paper-list {
+            list-style-type: none; /* Removes the default bullet points */
+            padding-left: 0; /* Removes the default padding */
+            margin-top: 20px;
+        }
+
+        .paper-list li {
+            margin-bottom: 10px; /* Adds some space between the papers */
+        }
+
+        .paper-list a {
+            text-decoration: none; /* Optional: removes the underline from links */
+            color: #50b3a2; /* Makes the link color consistent with your header color */
+        }
+
+        .paper-list a:hover {
+            text-decoration: underline; /* Re-adds underline on hover for clarity */
+        }
+
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            .bio-section {
+                flex-direction: column;
+                align-items: center;
+            }
+            .bio-section img {
+                margin-right: 0;
+                margin-bottom: 20px; /* Add some space below the image on small screens */
+            }
+            header nav, header nav ul {
+                float: none;
+                text-align: center;
+            }
+            header nav li {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+
+
+
+    </style>
+
+ 
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="teaching.html">Teaching</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1 class="main-heading">Wanrong Zhu</h1>
+        <!-- Profile section goes here -->
+        <!-- Education section goes here -->
+    </div>
+
+    <section class="container bio-section"> 
+
+        <img src="picture.jpg" alt="Wanrong Zhu">
+        <div class="bio">
+            <p>I am a final-year PhD student at the Department of Statistics, University of Chicago. I am fortunate to be advised by Professors <a href="https://rinafb.github.io/" target="_blank">Rina Foygel Barber</a>  and 
+                <a href="https://www.stat.uchicago.edu/~wbwu/" target="_blank">Wei Biao Wu</a>.
+            </p>
+            
+            <p>  
+            I am generally interested in statistical inference problems, with my research situated at the intersection of statistics, machine learning, and stochastic optimization. 
+            <!--
+            I am particularly interested in challenging contexts such as online streaming data, structured high-dimensional data, heavy-tailed noise, and two-stage processes. 
+            -->
+            My recent work focuses on the development of methods and theoretical foundations in uncertainty quantification for online learning and stochastic optimization. 
+            Additionally, I am exploring goodness-of-fit testing and predictive inference related to selection and conditioning.
+           
+             
+
+
+            </p>
+
+            <p>
+            Here is my <a href="https://scholar.google.com/citations?user=tp2AVjAAAAAJ&hl=en&oi=sra" target="_blank">Google Scholar </a> page
+            <br>
+            Email: wanrongzhu (at) uchicago (dot) edu 
+            </p>
+
+            <!--
+            <p>I’m on the 2023-2024 job market!</p>
+            -->
+         </div>
+    </section>
+
+ 
+    <div class="container">
+    <section class="container education-section">
+        <h3>Education</h3>
+        <ul>
+            <li>Ph.D., Statistics, University of Chicago, 2018 - Present</li>
+            <li>M.S., Statistics, University of Chicago, 2016 - 2018</li>
+            <li>B.S., Mathematics, Nanjing University, 2012 - 2016</li>
+        </ul>
+    </section>
+    </div>>
+
+
+    <div class="container">
+        <section class="container education-section">
+    <p> Beside research, I'm a big fan of tennis!
+    </p>
+</section>
+</div>>
+
+
+    
+
+
+     
+</body>
+</html>
